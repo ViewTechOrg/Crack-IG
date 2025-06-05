@@ -16,7 +16,8 @@ required_modules = [
     "rich",
     "faker",
     "random_user_agent",
-    "cython"
+    "cython",
+    "prompt_toolkit"
 ]
 
 def ensure_module_installed(module_name):
