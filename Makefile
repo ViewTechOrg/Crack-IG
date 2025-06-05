@@ -5,7 +5,7 @@
 ########################################
 
 # Daftar package
-PACKAGEBASH := curl python bc ncurses-utils ossp-uuid uuid-utils less zsh boxes figlet ruby clang
+PACKAGEBASH := curl python bc ncurses-utils ossp-uuid uuid-utils less zsh boxes figlet ruby clang tree
 PACKAGEPY := xonsh requests rich
 TERMUX_PATH := /data/data/com.termux/files/usr/bin/bash
 
@@ -42,7 +42,7 @@ install-py: detectCLI
 		pip install $(PACKAGEPY); \
 		if command -v $(PACKAGEPY) >/dev/null 2>&1; then \
 			echo "[✓] $(PACKAGEPY) berhasil diinstall"; \
-			echo "[!] Jalankan perintah: xonsh setup.xh install"; \
+			echo "[!] Jalankan perintah: xonsh setup.xsh install"; \
 		else \
 			echo "[✗] Gagal menginstall $(PACKAGEPY)"; \
 			echo "[!] Jalankan manual: pip install $(PACKAGEPY)"; \
