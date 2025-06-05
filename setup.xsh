@@ -68,7 +68,7 @@ if not check_command_exists("g++"):
     sys.exit(1)
 
 # Memeriksa file main.cpp
-if not os.path.isfile("main.cpp"):
+if not os.path.isfile("src/main.cpp"):
     print("\033[1;31m✗ File main.cpp tidak ditemukan\033[0m")
     sys.exit(1)
 
