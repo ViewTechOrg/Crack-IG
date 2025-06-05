@@ -1,5 +1,8 @@
 #!/usr/bin/env xonsh
 
+# setup tools xonsh by ViewTech Team
+# simple version
+
 import os
 import sys
 
