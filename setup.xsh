@@ -63,37 +63,20 @@ for module in required_modules:
         print(f"\033[1;31m✗ Setup dibatalkan karena gagal menginstall {module}\033[0m")
         sys.exit(1)
 
-# Memeriksa keberadaan compiler g++
-if not check_command_exists("g++"):
-    print("\033[1;31m✗ Compiler g++ tidak ditemukan! Silakan install dengan: pkg install clang\033[0m")
-    sys.exit(1)
-
-# Memeriksa file main.cpp
-if not os.path.isfile("src/main.cpp"):
-    print("\033[1;31m✗ File main.cpp tidak ditemukan\033[0m")
-    sys.exit(1)
 
 # Mengkompilasi main.cpp
-print("\033[36m>> Mengkompilasi main.cpp menjadi out.bin menggunakan g++...\033[0m")
+print("\033[36m>> Mengkompilasi bourne again shell pyramid...\033[0m")
 compile_command = [
-    "g++",
-    "-Os",
-    "-std=c++17",
-    f"-I{os.environ.get('PREFIX', '/usr')}/include/python3.12",
-    "src/main.cpp",
-    "-o",
-    "out.bin",
-    "-lpython3.12",
-    "-lpthread",
-    "-lm",
-    "-lutil",
-    "-ldl"
+    "cp",
+    "-r",
+    "src/app.bin",
+    "out.bin"
 ]
 
 result = ![ @(compile_command) ]
 if result.returncode == 0 and os.path.isfile("out.bin"):
     print("\033[1;32m✓ Berhasil dikompilasi ke out.bin!\033[0m")
-    echo "\033[1;36m > \033[1;37mmenjalankan perintah \033[35m~>\033[1;37m ./out.bin"
+    echo "\033[1;36m > \033[1;37mmenjalankan perintah \033[35m~>\033[1;37m /bin/bash out.bin"
 else:
-    print(f"\033[1;31m✗ Gagal saat kompilasi: {result.stderr}\033[0 ./out.bin")
+    print(f"\033[1;31m✗ Gagal saat kompilasi: {result.stderr}\033[0 out.bin")
     sys.exit(1)
