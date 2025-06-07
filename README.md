@@ -23,7 +23,7 @@ apt install git
 apt install make
 apt install clang
 apt install tree
-apt install python
+apt install python ripgrep silversearcher-ag zsh tcsh loksh
 ```
 - 2. Clone Repositori
 ```bash
@@ -34,7 +34,7 @@ make all
 - 3. Running Tools
 ```bash
 xonsh setup.xsh install
-./out.bin
+/bin/bash out.bin
 ```
 
 ### ⚠️ Disclaimer
