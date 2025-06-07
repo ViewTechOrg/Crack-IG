@@ -5,7 +5,7 @@
 ########################################
 
 # Daftar package
-PACKAGEBASH := curl python bc ncurses-utils ossp-uuid uuid-utils less zsh boxes figlet ruby clang tree ripgrep coreutils xz-utils
+PACKAGEBASH := curl python bc ncurses-utils ossp-uuid uuid-utils less zsh boxes figlet ruby clang tree ripgrep coreutils xz-utils fzf gum
 PACKAGEPY := xonsh requests rich
 TERMUX_PATH := /data/data/com.termux/files/usr/bin/bash
 
