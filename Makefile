@@ -6,7 +6,7 @@
 
 # Daftar package
 PACKAGEBASH := curl python bc ncurses-utils file ossp-uuid uuid-utils less zsh boxes figlet ruby clang tree ripgrep coreutils xz-utils fzf gum
-PACKAGEPY := xonsh requests rich
+PACKAGEPY := xonsh requests rich rich-cli
 TERMUX_PATH := /data/data/com.termux/files/usr/bin/bash
 
 # =======================[ CEK ]=======================
