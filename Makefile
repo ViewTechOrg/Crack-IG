@@ -25,7 +25,7 @@ install-system: detectCLI
 	@echo "[?] Menginstall package dari bash..."
 	@for pkg in $(PACKAGEBASH); do \
 		echo "[>] Menginstall $$pkg..."; \
-		apt-get install $$pkg >/dev/null 2>&1; \
+		apt-get install $$pkg -y >/dev/null 2>&1; \
 		if test -z "$$(command -v $$pkg >/dev/null 2>&1)"; then \
 			echo "[✓] Berhasil menginstall $$pkg"; \
 		else \
