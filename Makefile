@@ -25,8 +25,8 @@ install-system: detectCLI
 	@echo "[?] Menginstall package dari bash..."
 	@for pkg in $(PACKAGEBASH); do \
 		echo "[>] Menginstall $$pkg..."; \
-		yes | pkg install $$pkg >/dev/null 2>&1; \
-		if command -v $$pkg >/dev/null 2>&1; then \
+		apt-get install $$pkg >/dev/null 2>&1; \
+		if test -z "$$(command -v $$pkg >/dev/null 2>&1)"; then \
 			echo "[✓] Berhasil menginstall $$pkg"; \
 		else \
 			echo "[✗] Gagal menginstall $$pkg"; \
@@ -40,7 +40,7 @@ install-py: detectCLI
 		echo "[✓] Python ditemukan"; \
 		echo "[>] Menginstall Python package: $(PACKAGEPY)..."; \
 		pip install $(PACKAGEPY); \
-		if command -v $(PACKAGEPY) >/dev/null 2>&1; then \
+		if (($$? != 0)); then \
 			echo "[✓] $(PACKAGEPY) berhasil diinstall"; \
 			echo "[!] Jalankan perintah: xonsh setup.xsh install"; \
 		else \
