@@ -39,14 +39,16 @@ install-py: detectCLI
 	@if command -v python >/dev/null 2>&1; then \
 		echo "[✓] Python ditemukan"; \
 		echo "[>] Menginstall Python package: $(PACKAGEPY)..."; \
-		pip install $(PACKAGEPY); \
-		if (($$? != 0)); then \
-			echo "[✓] $(PACKAGEPY) berhasil diinstall"; \
-			echo "[!] Jalankan perintah: xonsh setup.xsh install"; \
-		else \
-			echo "[✗] Gagal menginstall $(PACKAGEPY)"; \
-			echo "[!] Jalankan manual: pip install $(PACKAGEPY)"; \
-		fi; \
+		for install in $(PACKAGEPY); do \
+			pip install $$install; \
+			if (($$? != 0)); then \
+				echo "[✓] $(PACKAGEPY) berhasil diinstall"; \
+				echo "[!] Jalankan perintah: xonsh setup.xsh install"; \
+			else \
+				echo "[✗] Gagal menginstall $(PACKAGEPY)"; \
+				echo "[!] Jalankan manual: pip install $(PACKAGEPY)"; \
+			fi; \
+		done \
 	else \
 		echo "[✗] Python tidak ditemukan! Silakan install terlebih dahulu."; \
 	fi
