@@ -41,7 +41,7 @@ install-py: detectCLI
 		echo "[>] Menginstall Python package: $(PACKAGEPY)..."; \
 		for install in $(PACKAGEPY); do \
 			pip install $$install; \
-			if test "$$?" == 0 ; then \
+			if [ "$$?" == 0 ]; then \
 				echo "[✓] $(PACKAGEPY) berhasil diinstall"; \
 				echo "[!] Jalankan perintah: xonsh setup.xsh install"; \
 			else \
