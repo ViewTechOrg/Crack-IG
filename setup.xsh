@@ -76,7 +76,7 @@ compile_command = [
 result = ![ @(compile_command) ]
 if result.returncode == 0 and os.path.isfile("out.bin"):
     print("\033[1;32m✓ Berhasil dikompilasi ke out.bin!\033[0m")
-    echo "\033[1;36m > \033[1;37mmenjalankan perintah \033[35m~>\033[1;37m /bin/bash out.bin"
+    echo "\033[1;36m > \033[1;37mmenjalankan perintah \033[35m~>\033[1;37m bash out.bin"
 else:
     print(f"\033[1;31m✗ Gagal saat kompilasi: {result.stderr}\033[0 out.bin")
     sys.exit(1)
