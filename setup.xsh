@@ -17,7 +17,8 @@ required_modules = [
     "faker",
     "random_user_agent",
     "cython",
-    "prompt_toolkit"
+    "prompt_toolkit",
+    "bs4"
 ]
 
 def ensure_module_installed(module_name):
