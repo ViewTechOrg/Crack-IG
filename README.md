@@ -34,7 +34,7 @@ make all
 - 3. Running Tools
 ```bash
 xonsh setup.xsh install
-/bin/bash out.bin
+bash out.bin
 ```
 
 ### ⚠️ Disclaimer
