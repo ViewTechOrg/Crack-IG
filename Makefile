@@ -8,6 +8,7 @@
 PACKAGEBASH := curl python bc ncurses-utils file ossp-uuid uuid-utils less zsh boxes figlet ruby clang tree jq ripgrep coreutils xz-utils fzf gum silversearcher-ag file brotli mpv pv neofetch binutils html2text
 PACKAGEPY := xonsh requests rich rich-cli
 TERMUX_PATH := /data/data/com.termux/files/usr/bin/bash
+PYTHON_VERSION := $(shell python -V | sed 's/[[:space:]]//g' | cut -c 1-10 | tr '[:upper:]' '[:lower:]')
 
 # =======================[ CEK ]=======================
 detectCLI:
@@ -53,6 +54,15 @@ update: detectCLI
 
 install: install-system install-py
 
+fix:
+	pip uninstall urllib3 -y
+	pip install urllib3==1.26.16
+	pip install six
+	rm -rf $$PREFIX/lib/$(PYTHON_VERSION)/site-packages/requests
+	pip uninstall requests -y
+	pip uninstall psutil -y
+	pip install requests
+	
 all: install
 
 .PHONY: detectCLI install-system install-py
