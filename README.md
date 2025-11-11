@@ -37,7 +37,7 @@ bash CrackIge.sh
 ```
 
 ### 🧩 Preview Tools
-![Logo](https://github.com/ViewTechOrg/Crack-IG/blob/master/img%3F/20251110_204648.jpg)
+![Logo](https://github.com/ViewTechOrg/Crack-IG/blob/master/img%3F/IMG-20251111-WA0011.jpg)
 
 ### ⚠️ Disclaimer
 Tool ini dibuat hanya untuk tujuan edukasi dan pengujian keamanan (penetration testing) di lingkungan yang sah.
