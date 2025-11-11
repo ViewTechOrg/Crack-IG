@@ -5,7 +5,7 @@
 ########################################
 
 # Daftar package
-PACKAGEBASH := curl python bc ncurses-utils file ossp-uuid uuid-utils less zsh boxes figlet ruby clang tree jq ripgrep coreutils xz-utils fzf gum silversearcher-ag file brotli mpv pv neofetch binutils html2text
+PACKAGEBASH := curl python bc ncurses-utils file ossp-uuid uuid-utils less zsh boxes figlet ruby clang tree jq ripgrep coreutils xz-utils fzf gum silversearcher-ag file brotli mpv pv neofetch binutils html2text openssl-tool bzip2
 PACKAGEPY := xonsh requests rich rich-cli
 TERMUX_PATH := /data/data/com.termux/files/usr/bin/bash
 PYTHON_VERSION := $(shell python -V | sed 's/[[:space:]]//g' | cut -c 1-10 | tr '[:upper:]' '[:lower:]')
