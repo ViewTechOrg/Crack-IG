@@ -46,7 +46,7 @@ install-py: detectCLI
 	else \
 		echo "[✗] Python tidak ditemukan! Silakan install terlebih dahulu."; \
 	fi
-	@echo "[!] Jalankan perintah: xonsh setup.xsh install";
+	@echo "[!] Jalankan perintah: bash CrackIge.sh";
 	
 update: detectCLI
 	@echo "[>] Melakukan update ..";sleep 1
