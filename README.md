@@ -36,6 +36,9 @@ make all
 bash CrackIge.sh
 ```
 
+### 🧩 Preview Tools
+![Logo](https://github.com/ViewTechOrg/Crack-IG/blob/master/img%3F/20251110_204648.jpg)
+
 ### ⚠️ Disclaimer
 Tool ini dibuat hanya untuk tujuan edukasi dan pengujian keamanan (penetration testing) di lingkungan yang sah.
 Pengguna bertanggung jawab penuh atas segala bentuk penggunaan alat ini. Pembuat tidak bertanggung jawab atas penyalahgunaan tool ini yang melanggar hukum atau merugikan pihak lain.
