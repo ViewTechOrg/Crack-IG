@@ -8,10 +8,8 @@
 - Koneksi Internet (Anda harus siapkan Koneksi yang stabil)
 
 ### Fitur Utama
-- Menggumpulkan Data Username dari Generate Username
 - Menggumpulkan Data Username dari Followers
-- Menggumpulkan Data Username dari Follow
-- Metode Login Api Dan Web
+- - Metode Login Api
 
   
 ### Command Instalasi
