@@ -33,8 +33,7 @@ make all
 ```
 - 3. Running Tools
 ```bash
-xonsh setup.xsh install
-bash out.bin
+bash CrackIge.sh
 ```
 
 ### ⚠️ Disclaimer
