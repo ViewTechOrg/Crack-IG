@@ -38,7 +38,6 @@ xonsh setup.xsh
 ![Logo](https://github.com/ViewTechOrg/Crack-IG/blob/master/img%3F/IMG-20251111-WA0011.jpg)
 
 ### ⚠️ Disclaimer
-Tool ini dibuat hanya untuk tujuan edukasi dan pengujian keamanan (penetration testing) di lingkungan yang sah.
 Pengguna bertanggung jawab penuh atas segala bentuk penggunaan alat ini. Pembuat tidak bertanggung jawab atas penyalahgunaan tool ini yang melanggar hukum atau merugikan pihak lain.
 
 ### 📄 Lisensi
