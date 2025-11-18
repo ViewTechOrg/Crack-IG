@@ -31,7 +31,7 @@ make all
 ```
 - 3. Running Tools
 ```bash
-bash CrackIge.sh
+xonsh setup.xsh
 ```
 
 ### 🧩 Preview Tools
